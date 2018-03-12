@@ -40,8 +40,8 @@ public class NeuralNet {
 
 	public static void main(String[] args) {
 		NeuralNet neuralNet = new NeuralNet(2, 4, 1, new SigmoidActivationFunction());
-		int maxRuns = 50000;
-		double minErrorCondition = 0.001;
+		int maxRuns = 100000;
+		double minErrorCondition = 0.00001;
 		neuralNet.train(maxRuns, minErrorCondition);
 	}
 
